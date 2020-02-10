@@ -1,6 +1,6 @@
 import { Promise, connect } from 'mongoose';
 import app from './app';
-const port = 3000;
+const port = 80;
 
 Promise;
 connect('mongodb+srv://almundo-user:DFptnszCbOLfr6bb@almundoexam-yfkr5.mongodb.net/test?retryWrites=true&w=majority', {
@@ -10,7 +10,7 @@ connect('mongodb+srv://almundo-user:DFptnszCbOLfr6bb@almundoexam-yfkr5.mongodb.n
 	.then(() => {
 		console.log('La conexión a la base de datos hotels se ha realizado correctamente');
 		app.listen(port, () => {
-			console.log('servidor corriendo en http://localhost:3000');
+			console.log('Servidor corriendo');
 		});
 	})
 	.catch(err => console.log(err));
