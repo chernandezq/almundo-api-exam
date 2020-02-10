@@ -10,7 +10,6 @@ describe('Get /Hotels: ', () => {
 		chai.request(url)
 			.get('/api/hotels')
 			.end(function(err, res) {
-				console.log(res.body);
 				expect(res).to.have.status(200);
 				expect(res.body).to.be.an('array');
 				done();
