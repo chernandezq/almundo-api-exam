@@ -1,6 +1,6 @@
 import { Promise, connect } from 'mongoose';
 import app from './app';
-const port = 80;
+const port = process.env.PORT || 80;
 
 Promise;
 connect('mongodb+srv://almundo-user:DFptnszCbOLfr6bb@almundoexam-yfkr5.mongodb.net/test?retryWrites=true&w=majority', {
