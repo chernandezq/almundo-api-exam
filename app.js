@@ -10,6 +10,9 @@ app.use(json());
 app.use(methodOverride());
 
 //Routes
+app.get('/', (req, res) => {
+	res.send('Hola, api desarrollada por Cristian Hernandez para exámen FullStack developer en Almundo ');
+});
 app.use('/api', hotel_routes);
 
 export default app;
