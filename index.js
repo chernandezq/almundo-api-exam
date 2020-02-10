@@ -3,7 +3,10 @@ import app from './app';
 const port = 3000;
 
 Promise;
-connect('mongodb://localhost:27017/hotels', { useNewUrlParser: true, useUnifiedTopology: true })
+connect('mongodb+srv://almundo-user:DFptnszCbOLfr6bb@almundoexam-yfkr5.mongodb.net/test?retryWrites=true&w=majority', {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+})
 	.then(() => {
 		console.log('La conexión a la base de datos hotels se ha realizado correctamente');
 		app.listen(port, () => {
