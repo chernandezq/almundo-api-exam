@@ -26,7 +26,7 @@ Run test
 
 > **/api/hotels** (GET) Get all hotels <br> **/api/hotels/:id** (GET) Get info hotel by id <br> **/api/hotels** (POST) Create a new hotel <br> **/api/hotels/:id** (DELETE) Delete hotel by id
 
-#Creation hotel
+# Creation hotel
 > name: String <br>
 	stars: Number <br>
 	images: [
